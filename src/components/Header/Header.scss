@@ -1,0 +1,71 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 23px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 123px;
+}
+
+.header__branding__siteTitle {
+  .siteTitle {
+    font-family: "Nunito-Bold", sans-serif;
+    font-size: 24px;
+    line-height: 32.74px;
+    letter-spacing: 8px;
+  }
+}
+
+.header__navigation {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+
+  .header__navigation__list__item {
+    a {
+      font-family: "Nunito-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 21.82px;
+      margin-right: 48px;
+      transition: all 200ms ease;
+      &:hover {
+        color: #daa520;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    .active {
+      font-weight: 800;
+      color: #daa520;
+    }
+  }
+  .header__navigation__cta__button {
+    background-color: transparent;
+    border: 1px solid #3e3f43;
+    border-radius: 8px;
+    width: 137px;
+    height: 40px;
+    color: #3e3f43;
+    font-family: "Nunito-Bold", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    &:hover,
+    &:focus {
+      border: 1px solid #daa520;
+      background-color: #daa520;
+      color: white;
+    }
+  }
+}

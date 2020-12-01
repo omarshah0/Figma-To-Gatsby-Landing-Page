@@ -1,0 +1,64 @@
+#hero {
+  position: relative;
+  min-height: 100vh;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 370px;
+    background-color: #f9bdbd;
+    border-radius: 0 0 0 120px;
+  }
+}
+
+.hero__container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 123px 123px 0;
+}
+
+.hero__description {
+  .hero__description_mainTitle {
+    width: 500px;
+    font-size: 36px;
+    font-family: "Nunito-Regular", sans-serif;
+    margin-bottom: 20px;
+  }
+  .hero__description_subTitle {
+    display: block;
+    font-size: 72px;
+    font-family: "Nunito-Bold", sans-serif;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__image {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__description__cta__button {
+  width: 175px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #daa520;
+  border: 1px solid #daa520;
+  color: white;
+  font-size: 16px;
+  font-family: "Nunito-Bold", sans-serif;
+  cursor: pointer;
+}
+
+.hero__background__logo {
+  position: absolute;
+  right: 150px;
+  bottom: 10px;
+  transform: translate(-150px, -10px);
+}
