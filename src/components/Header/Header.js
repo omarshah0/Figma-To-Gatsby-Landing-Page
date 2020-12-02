@@ -1,12 +1,35 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useState, useEffect } from "react"
+import { Link as ScrollLink } from "react-scroll"
 import Logo from "../../assets/Header-Logo.svg"
 import "./Header.css"
 
 function Header() {
+  const [sticky, setSticky] = useState(false)
+
+  function handleScroll() {
+    if (window.scrollY > 100) {
+      setSticky(true)
+    } else if (window.scrollY < 100) {
+      setSticky(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  })
+
   return (
-    <header>
-      <Link to="/">
+    <header className={`${sticky && "sticky"}`}>
+      <ScrollLink
+        to="hero"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={300}
+      >
         <div className="header__branding">
           <div className="header__branding__logo">
             <Logo />
@@ -15,34 +38,69 @@ function Header() {
             <h1 className="siteTitle">WOODIES</h1>
           </div>
         </div>
-      </Link>
+      </ScrollLink>
       <div className="header__navigation">
         <nav>
           <ul className="header__navigation__list">
             <li className="header__navigation__list__item">
-              <Link to="/" activeClassName="active">
+              <ScrollLink
+                activeClass="active"
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={300}
+              >
                 Home
-              </Link>
+              </ScrollLink>
             </li>
             <li className="header__navigation__list__item">
-              <Link to="#about" activeClassName="active">
+              <ScrollLink
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 About Us
-              </Link>
+              </ScrollLink>
             </li>
             <li className="header__navigation__list__item">
-              <Link to="#how-it-works" activeClassName="active">
+              <ScrollLink
+                activeClass="active"
+                to="how-it-works"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={300}
+              >
                 How it works
-              </Link>
+              </ScrollLink>
             </li>
             <li className="header__navigation__list__item">
-              <Link to="#categories" activeClassName="active">
+              <ScrollLink
+                activeClass="active"
+                to="categories"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={300}
+              >
                 Categories
-              </Link>
+              </ScrollLink>
             </li>
             <li className="header__navigation__list__item">
-              <Link to="#testimony" activeClassName="active">
+              <ScrollLink
+                activeClass="active"
+                to="testimony"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={300}
+              >
                 Testimony
-              </Link>
+              </ScrollLink>
             </li>
           </ul>
         </nav>

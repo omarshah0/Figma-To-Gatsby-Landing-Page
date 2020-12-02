@@ -8,12 +8,21 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 23px;
-  position: absolute;
+  padding: 20px 0;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sticky {
+  background-color: white;
+  -webkit-box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.06);
 }
 
 .header__branding {
@@ -27,6 +36,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 123px;
+  cursor: pointer;
 }
 
 .header__branding__siteTitle .siteTitle {
@@ -54,6 +64,7 @@ header {
   margin-right: 48px;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
+  cursor: pointer;
 }
 
 .header__navigation .header__navigation__list__item a:hover {
