@@ -36,6 +36,7 @@
   font-size: 36px;
   font-family: "Nunito-Regular", sans-serif;
   margin-bottom: 20px;
+  color: #3e3f43;
 }
 
 .hero__description .hero__description_subTitle {
@@ -43,11 +44,13 @@
   font-size: 72px;
   font-family: "Nunito-Bold", sans-serif;
   margin-bottom: 20px;
+  color: #313235;
 }
 
 .hero__image {
   position: relative;
   z-index: 1;
+  width: 568px;
 }
 
 .hero__description__cta__button {

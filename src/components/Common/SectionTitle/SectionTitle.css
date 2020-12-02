@@ -1,0 +1,56 @@
+.sectionTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 120px 123px 80px;
+  width: 100%;
+}
+
+.sectionTitle__subTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionTitle__subTitle h3 {
+  font-size: 36px;
+  font-family: "Nunito-Bold", sans-serif;
+  color: #3e3f43;
+}
+
+.sectionTitle__mainTitle {
+  justify-self: flex-end;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.sectionTitle__mainTitle h2 {
+  font-size: 72px;
+  font-family: "Nunito-Bold", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 0.1);
+}
+
+.sectionTitle__divider {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  height: 1px;
+  background-color: #000000;
+  margin: 0 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+/*# sourceMappingURL=SectionTitle.css.map */

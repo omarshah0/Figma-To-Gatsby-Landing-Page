@@ -1,0 +1,37 @@
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  padding: 120px 123px 80px;
+  width: 100%;
+}
+
+.sectionTitle__subTitle {
+  display: flex;
+  order: 1;
+  align-items: center;
+  h3 {
+    font-size: 36px;
+    font-family: "Nunito-Bold", sans-serif;
+    color: #3e3f43;
+  }
+}
+
+.sectionTitle__mainTitle {
+  justify-self: flex-end;
+  order: 3;
+  h2 {
+    font-size: 72px;
+    font-family: "Nunito-Bold", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34, 0.1);
+  }
+}
+
+.sectionTitle__divider {
+  order: 2;
+  height: 1px;
+  background-color: #000000;
+  margin: 0 20px;
+  flex-grow: 1;
+}

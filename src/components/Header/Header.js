@@ -25,22 +25,22 @@ function Header() {
               </Link>
             </li>
             <li className="header__navigation__list__item">
-              <Link to="/about" activeClassName="active">
+              <Link to="#about" activeClassName="active">
                 About Us
               </Link>
             </li>
             <li className="header__navigation__list__item">
-              <Link to="/how-it-works" activeClassName="active">
+              <Link to="#how-it-works" activeClassName="active">
                 How it works
               </Link>
             </li>
             <li className="header__navigation__list__item">
-              <Link to="/categories" activeClassName="active">
+              <Link to="#categories" activeClassName="active">
                 Categories
               </Link>
             </li>
             <li className="header__navigation__list__item">
-              <Link to="/testimony" activeClassName="active">
+              <Link to="#testimony" activeClassName="active">
                 Testimony
               </Link>
             </li>

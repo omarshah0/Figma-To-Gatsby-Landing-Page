@@ -8,8 +8,8 @@ function Hero() {
     query {
       heroImage: file(relativePath: { eq: "Furniture-Table.png" }) {
         childImageSharp {
-          fixed(width: 568) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 568) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -33,7 +33,7 @@ function Hero() {
         </div>
         <div className="hero__image">
           <Img
-            fixed={data.heroImage.childImageSharp.fixed}
+            fluid={data.heroImage.childImageSharp.fluid}
             alt="Furniture Table"
           />
         </div>
